@@ -8,3 +8,13 @@ buttonOne.addEventListener('click', () => {
 buttonTwo.addEventListener('click', () => {
   document.body.style.backgroundColor = 'black';
 });
+
+var rule1 = {
+        conditions: [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: { hostEquals: 'www.google.com', schemes: ['https'] },
+            css: ["input[type='password']"]
+          })
+        ],
+        actions: [ new chrome.declarativeContent.ShowPageAction() ]
+      };
