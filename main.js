@@ -18,3 +18,10 @@ var rule1 = {
         ],
         actions: [ new chrome.declarativeContent.ShowPageAction() ]
       };
+
+
+let buttonThree = document.getElementById('test');
+
+buttonThree.addEventListener('click', () => {
+  document.body.title.style.color = "red";
+});
