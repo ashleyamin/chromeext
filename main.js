@@ -9,19 +9,24 @@ buttonTwo.addEventListener('click', () => {
   document.body.style.backgroundColor = 'black';
 });
 
-var rule1 = {
-        conditions: [
-          new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { hostEquals: 'www.google.com', schemes: ['https'] },
-            css: ["input[type='password']"]
-          })
-        ],
-        actions: [ new chrome.declarativeContent.ShowPageAction() ]
-      };
+alert("welcome to a new page!");
 
 
-let buttonThree = document.getElementById('test');
 
-buttonThree.addEventListener('click', () => {
-  document.body.title.style.color = "red";
-});
+
+// var rule1 = {
+//         conditions: [
+//           new chrome.declarativeContent.PageStateMatcher({
+//             pageUrl: { hostEquals: 'www.google.com', schemes: ['https'] },
+//             css: ["input[type='password']"]
+//           })
+//         ],
+//         actions: [ new chrome.declarativeContent.ShowPageAction() ]
+//       };
+//
+//
+// let buttonThree = document.getElementById('test');
+//
+// buttonThree.addEventListener('click', () => {
+//   document.body.title.style.color = "red";
+// });
