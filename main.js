@@ -1,3 +1,6 @@
+alert("welcome to a new page!");
+
+
 let buttonOne = document.getElementById('black');
 let buttonTwo = document.getElementById('red');
 
@@ -8,9 +11,6 @@ buttonOne.addEventListener('click', () => {
 buttonTwo.addEventListener('click', () => {
   document.body.style.backgroundColor = 'black';
 });
-
-alert("welcome to a new page!");
-
 
 
 
