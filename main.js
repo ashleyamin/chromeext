@@ -1,4 +1,4 @@
-alert("welcome to a new page!");
+alert("Confused by this visa website? We can help you!");
 
 
 let buttonOne = document.getElementById('black');
